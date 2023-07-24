@@ -74,6 +74,11 @@ function check(x)
         if (element) {
             if (element.classList.contains("pie") && blockk==0) 
             {
+                   if(x>32)
+    {
+        let win = document.getElementById("box").innerHTML = '<p id="win">WIN!!</p>';
+        press=1;
+    }
                 win.currentTime = 0;
                 win.play();
                 element.classList.replace("pie", "ok");
